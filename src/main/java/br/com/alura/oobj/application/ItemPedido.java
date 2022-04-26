@@ -65,6 +65,14 @@ public class ItemPedido {
     return valorUnitario.multiply(BigDecimal.valueOf(quantidade));
   }
 
+  public ItemPedido(){}
+  public ItemPedido(Long codigo, String descricao, Integer quantidade, BigDecimal valorUnitario, String classeFiscal) {
+    this.codigo = codigo;
+    this.descricao = descricao;
+    this.quantidade = quantidade;
+    this.valorUnitario = valorUnitario;
+    this.classeFiscal = classeFiscal;
+  }
   @Override
   public String toString() {
     return "ItemPedido{" +
